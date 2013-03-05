@@ -23,6 +23,8 @@ private var collisionCount = 0;
 private var camTransform : Transform;
 var originalPosition : Vector3;
 
+//reference the score from the spawning script
+
 function Start () {
 	myRigidbody = rigidbody;
 	myTransform = transform;
@@ -99,6 +101,9 @@ function OnCollisionEnter (collider:Collision) {
 	//	if the object with selected tag is hit, then does stuff
 	Destroy(this.gameObject);
 	//	going need to use to destroy almost anything
+
+	score=score+10;
+	
 	}
 	
 	if (collider.gameObject.tag == "Scum") {

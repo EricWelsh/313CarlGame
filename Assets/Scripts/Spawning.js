@@ -2,14 +2,27 @@
 //attached to the camera
 
 var prefab : Transform;
+var gos: GameObject[];
+
+var score : int;
 
 function Start () {
+	score = 0;
+	
 	while (true) {
 	yield WaitForSeconds (Random.Range (1.0, 2.0));
-	Instantiate (prefab, Vector3(Random.Range(-20.0, 20.0), 0, Random.Range(-20.0, 20.0)), Quaternion.identity);
+	
+	gos = GameObject.FindGameObjectsWithTag("Scum");
+	if(gos.Length < 21){
+		//sets teh cap of spawning scum (has to subtract one due to original)
+	
+	Instantiate (prefab, Vector3(Random.Range(-20.0, 20.0), 0, Random.Range(-20.0, 20.0)), Quaternion.identity);	
 	//Random.Range does the min and max float values.
 	//vector3 = x-axis, y-axis, then z-axis
 		//flat game
+		
+		
+		}
 	}
 }
 
