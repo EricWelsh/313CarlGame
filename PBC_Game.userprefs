@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scum.js">
+    <Files>
+      <File FileName="Assets/Scripts/Scum.js" Line="62" Column="30" />
+      <File FileName="Assets/Scripts/Spawning.js" Line="9" Column="83" />
+      <File FileName="Assets/Scripts/Arm.js" Line="2" Column="40" />
+      <File FileName="Assets/Scripts/CameraScript.js" Line="12" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
