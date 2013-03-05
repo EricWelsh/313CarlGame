@@ -21,7 +21,6 @@ private var freezeRotationSetting : boolean;
 private var sqrMoveLimit : float;
 private var collisionCount = 0;
 private var camTransform : Transform;
-
 var originalPosition : Vector3;
 
 function Start () {
@@ -38,6 +37,7 @@ function Start () {
 	sqrMoveLimit = moveLimit * moveLimit;	// Since we're using sqrMagnitude, which is faster than magnitude
 	
 	originalPosition = transform.position;
+	//for setting the original position of any axis that is specified later
 }
 
 function Update () {
