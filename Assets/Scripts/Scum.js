@@ -24,6 +24,12 @@ private var camTransform : Transform;
 var originalPosition : Vector3;
 
 
+var scumTexture1 : Texture;
+var scumTexture2 : Texture;
+var scumTexture3 : Texture;
+
+var textureNumber : int;
+
 function Start () {
 	myRigidbody = rigidbody;
 	myTransform = transform;
@@ -39,6 +45,22 @@ function Start () {
 	
 	originalPosition = transform.position;
 	//for setting the original position of any axis that is specified later
+	
+	
+	textureNumber = Random.Range(0,3);
+	//Returns a random integer number between min [inclusive] and max [exclusive] 
+	if (textureNumber==0) {
+		renderer.material.mainTexture = scumTexture1;
+	}
+	
+	else if (textureNumber==1){
+		renderer.material.mainTexture = scumTexture2;
+	}
+	
+	else {
+		renderer.material.mainTexture = scumTexture3;
+	}
+	
 }
 
 function Update () {
@@ -103,7 +125,7 @@ function OnCollisionEnter (collider:Collision) {
 
 	PointsScored.points+=10;
 	print(PointsScored.points);
-	Arm.speed+=0.1;
+	Arm.speed+=0.05;
 	}
 	
 	if (collider.gameObject.tag == "Scum") {

@@ -4,7 +4,6 @@
 var prefab : Transform;
 var gos: GameObject[];
 
-var score : int = 0;
 
 function Start () {
 	while (true) {
@@ -18,7 +17,7 @@ function Start () {
 	//Random.Range does the min and max float values.
 	//vector3 = x-axis, y-axis, then z-axis
 		//flat game
-		
+	
 		}
 	}
 }
