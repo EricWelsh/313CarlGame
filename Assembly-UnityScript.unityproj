@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Arm.js" />
      <Compile Include="Assets\Scripts\CameraScript.js" />
+     <Compile Include="Assets\Scripts\PointsScored.js" />
      <Compile Include="Assets\Scripts\Scum.js" />
      <Compile Include="Assets\Scripts\Spawning.js" />
      <Compile Include="Assets\Scripts\StartButton.js" />

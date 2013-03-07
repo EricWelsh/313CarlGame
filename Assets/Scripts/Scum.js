@@ -23,7 +23,6 @@ private var collisionCount = 0;
 private var camTransform : Transform;
 var originalPosition : Vector3;
 
-//reference the score from the spawning script
 
 function Start () {
 	myRigidbody = rigidbody;
@@ -67,7 +66,7 @@ function Update () {
 
 /*
 	if(this.position.x^2 + this.position.y^2 >= tankRadius^2){
-		//move to edge of tank
+		//move to edge of tank if outside of tank
 	}
 */
 
@@ -102,8 +101,9 @@ function OnCollisionEnter (collider:Collision) {
 	Destroy(this.gameObject);
 	//	going need to use to destroy almost anything
 
-	score=score+10;
-	
+	PointsScored.points+=10;
+	print(PointsScored.points);
+	Arm.speed+=0.1;
 	}
 	
 	if (collider.gameObject.tag == "Scum") {
@@ -111,4 +111,4 @@ function OnCollisionEnter (collider:Collision) {
 	}
 	//causes stuff to happen when scum hits other scum
 }
- 
+
