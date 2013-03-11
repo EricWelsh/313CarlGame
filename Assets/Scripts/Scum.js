@@ -129,7 +129,7 @@ function OnCollisionEnter (collider:Collision) {
 	//	going need to use to destroy almost anything
 
 	PointsScored.points+=10;
-	print(PointsScored.points);
+	//print(PointsScored.points);
 	Arm.speed+=0.05;
 	}
 	
