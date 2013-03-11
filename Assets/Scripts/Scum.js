@@ -64,6 +64,7 @@ function Start () {
 }
 
 function Update () {
+if (LevelTimer.seconds > 0){
     var ray = cameraVar.ScreenPointToRay(Input.mousePosition);     // Gets the mouse position in the form of a ray.
     if (Input.GetButtonDown("Fire1")) {     // If we click the mouse...
         if (!object) {      // And we are not currently moving an object...
@@ -91,7 +92,11 @@ function Update () {
 		//move to edge of tank if outside of tank
 	}
 */
-
+}
+	else {
+//		print ("meep");
+    }
+	//if statement stops the scum from being able to be clicked and dragged when timer runs out
 }
 
 function OnMouseDown () {

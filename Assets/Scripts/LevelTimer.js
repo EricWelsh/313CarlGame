@@ -1,6 +1,6 @@
 #pragma strict
 
-var seconds = 45;
+static var seconds = 45;
 private var textMesh : TextMesh;
 
 function Start () {

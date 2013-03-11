@@ -7,17 +7,26 @@ var gos: GameObject[];
 
 function Start () {
 	while (true) {
+//		if (LevelTimer.seconds > 0){
 	yield WaitForSeconds (Random.Range (1.0, 2.0));
 	
 	gos = GameObject.FindGameObjectsWithTag("Scum");
 	if(gos.Length < 21){
 		//sets the cap of spawning scum (has to subtract one due to original)
-	
-	Instantiate (prefab, Vector3(Random.Range(-20.0, 20.0), 0, Random.Range(-20.0, 20.0)), Quaternion.identity);	
-	//Random.Range does the min and max float values.
-	//vector3 = x-axis, y-axis, then z-axis
-		//flat game
-	
+
+		if (LevelTimer.seconds > 0){
+		Instantiate (prefab, Vector3(Random.Range(-20.0, 20.0), 0, Random.Range(-20.0, 20.0)), Quaternion.identity);	
+		//Random.Range does the min and max float values.
+		//vector3 = x-axis, y-axis, then z-axis
+			//flat game
+		}
+		//if statement stops spawning
+			    
+    	else {
+// 			print ("none");
+    	}
+    //will make the menu pop up that gives the player the choice to repeat the level or continue on
+    
 		}
 	}
 }
@@ -34,8 +43,14 @@ function Update () {
 }
 
 function OnTriggerEnter () {
+//		if (LevelTimer.seconds > 0){
     Instantiate (prefab);
+    }
+/*    
+    else {
+    print ("none");
+    }
 }
-
+*/
 
 
