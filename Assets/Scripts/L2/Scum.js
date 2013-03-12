@@ -27,8 +27,11 @@ var originalPosition : Vector3;
 var scumTexture1 : Texture;
 var scumTexture2 : Texture;
 var scumTexture3 : Texture;
-
 var textureNumber : int;
+
+var diff : Vector3;
+var distance : float;
+var tankRadius : int = 79;
 
 function Start () {
 	myRigidbody = rigidbody;
@@ -81,22 +84,28 @@ if (LevelTimer.seconds > 0){
 	if (object == this.gameObject.transform) {
 //		"this" meaning the object that the script is attached to
 		object.position = Vector3(ray.origin.x+offSet.x, object.position.y, ray.origin.z+offSet.z);     // Only move the object on a 2D plane.
+		diff = object.position;
+		distance = diff.magnitude;
+		if(distance > tankRadius) {
+			object.position = Vector3((diff.x/distance)*tankRadius, object.position.y, (diff.z/distance)*tankRadius);
+		}
+		else
+		{
+			object.position = Vector3(ray.origin.x+offSet.x, object.position.y, ray.origin.z+offSet.z);
+		}
 	}
 	
 	transform.position = Vector3.Lerp(this.transform.position, Vector3(0,transform.position.y,0), Time.deltaTime); //(Time.time - startTime) / duration);
 	//center gravity pull
 	//the y keeps it set in original the positiong
 
-/*
-	if(this.position.x^2 + this.position.y^2 >= tankRadius^2){
-		//move to edge of tank if outside of tank
-	}
-*/
 }
 	else {
-//		print ("meep");
+
     }
 	//if statement stops the scum from being able to be clicked and dragged when timer runs out
+	
+
 }
 
 function OnMouseDown () {
@@ -123,14 +132,14 @@ function OnMouseUp () {
 }
  
 function OnCollisionEnter (collider:Collision) {
-	if (collider.gameObject.tag == "Hands") {
+	if (collider.gameObject.tag == "Hands" && LevelTimer.seconds > 0) {
 	//	if the object with selected tag is hit, then does stuff
 	Destroy(this.gameObject);
 	//	going need to use to destroy almost anything
-
-	PointsScored.points+=10;
-	//print(PointsScored.points);
+	
+	PointsScored.points+=100;
 	Arm.speed+=0.05;
+	
 	}
 	
 	if (collider.gameObject.tag == "Scum") {

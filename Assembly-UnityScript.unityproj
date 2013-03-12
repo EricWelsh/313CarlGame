@@ -44,16 +44,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Arm.js" />
-     <Compile Include="Assets\Scripts\CameraScript.js" />
-     <Compile Include="Assets\Scripts\LevelTimer.js" />
-     <Compile Include="Assets\Scripts\PointsScored.js" />
-     <Compile Include="Assets\Scripts\Scum.js" />
-     <Compile Include="Assets\Scripts\Spawning.js" />
-     <Compile Include="Assets\Scripts\StartButton.js" />
-     <Compile Include="Assets\Scripts\TestOriginalScum.js" />
-     <Compile Include="Assets\Scripts\destroy.js" />
-     <Compile Include="Assets\Scripts\scriptDraggable.js" />
+     <Compile Include="Assets\Scripts\L1\conveyorScroll.js" />
+     <Compile Include="Assets\Scripts\L1\destroyObject.js" />
+     <Compile Include="Assets\Scripts\L1\drag.js" />
+     <Compile Include="Assets\Scripts\L1\move.js" />
+     <Compile Include="Assets\Scripts\L1\spawn.js" />
+     <Compile Include="Assets\Scripts\L2\Arm.js" />
+     <Compile Include="Assets\Scripts\L2\CameraScript.js" />
+     <Compile Include="Assets\Scripts\L2\LevelTimer.js" />
+     <Compile Include="Assets\Scripts\L2\PointsScored.js" />
+     <Compile Include="Assets\Scripts\L2\Scum.js" />
+     <Compile Include="Assets\Scripts\L2\Spawning.js" />
+     <Compile Include="Assets\Scripts\L2\StartButton.js" />
+     <Compile Include="Assets\Scripts\L2\TestOriginalScum.js" />
+     <Compile Include="Assets\Scripts\L2\destroy.js" />
+     <Compile Include="Assets\Scripts\L2\scriptDraggable.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
