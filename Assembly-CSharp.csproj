@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{408902DF-8304-B9E2-334F-B318D6C2B26B}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_1;UNITY_4_0;UNITY_STANDALONE_OSX;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\uSequencer\Example Scenes\04 Intermediate Examples\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\uSequencer\Example Scenes\ExampleSceneScripts\AlterPlaybackForASequence.cs" />
+     <Compile Include="Assets\uSequencer\Example Scenes\ExampleSceneScripts\BasicCharacterControllerGUI.cs" />
+     <Compile Include="Assets\uSequencer\Example Scenes\ExampleSceneScripts\BasicCharacterControls.cs" />
+     <Compile Include="Assets\uSequencer\Quick Start Prefabs\Scripts\AmbientLightAdjuster.cs" />
+     <Compile Include="Assets\uSequencer\Quick Start Prefabs\Scripts\AutoPlaySequence.cs" />
+     <Compile Include="Assets\uSequencer\Quick Start Prefabs\Scripts\SequenceTrigger.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Animation\USBlendAnimEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Animation\USPlayAdvancedAnimEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Animation\USPlayAnimEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Application\USLoadLevelAdditiveEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Application\USLoadLevelEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Attachment\USAttachToParentEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Audio\USFadeAudioEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Audio\USPauseResumeAudioEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Audio\USPlayAudioEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Audio\USStopAudioEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Debug\USMessageEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Fullscreen\PrintText.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Fullscreen\USDisplayImageEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Fullscreen\USFadeScreenEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Fullscreen\USPrintTextEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Light\USSetAmbientLightEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Object\USEnableObjectEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Particle System\USParticleEmitterStartEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Particle System\USParticleEmitterStopEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Physics\USApplyForceEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Physics\USSleepRigidBody.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Render\USChangeColor.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Render\USChangeTexture.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Sequence\USPauseSequenceEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Sequence\USPlaySequenceEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Sequence\USSetPlaybackRateEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Sequence\USSkipSequenceEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Sequence\USStopSequenceEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Signal\USSendMessageEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Spawn\USSpawnPrefabEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Transform\USLookAtObjectEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Transform\USMatchObjectEvent.cs" />
+     <Compile Include="Assets\uSequencer\Sequencer Events\Transform\USWarpToObject.cs" />
+ <Reference Include="Assets\uSequencer\Sequencer\uSequencerRuntime">
+ <HintPath>Assets\uSequencer\Sequencer\uSequencerRuntime.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

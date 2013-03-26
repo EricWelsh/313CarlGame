@@ -3,12 +3,13 @@
 
 var prefab : Transform;
 var gos: GameObject[];
-
+static var ScumAmount : int;
 
 function Start () {
+	ScumAmount=1;
 	while (true) {
 //		if (LevelTimer.seconds > 0){
-	yield WaitForSeconds (Random.Range (1.0, 2.0));
+	yield WaitForSeconds (Random.Range (1.0, 1.7));
 	
 	gos = GameObject.FindGameObjectsWithTag("Scum");
 	if(gos.Length < 21){
@@ -19,11 +20,14 @@ function Start () {
 		//Random.Range does the min and max float values.
 		//vector3 = x-axis, y-axis, then z-axis
 			//flat game
+			
+			ScumAmount+=1;
 		}
 		//if statement stops spawning
 			    
     	else {
 // 			print ("none");
+
     	}
     //will make the menu pop up that gives the player the choice to repeat the level or continue on
     

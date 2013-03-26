@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\L1\spawn.js" />
      <Compile Include="Assets\Scripts\L2\Arm.js" />
      <Compile Include="Assets\Scripts\L2\CameraScript.js" />
+     <Compile Include="Assets\Scripts\L2\EndOfLevel.js" />
      <Compile Include="Assets\Scripts\L2\LevelTimer.js" />
      <Compile Include="Assets\Scripts\L2\PointsScored.js" />
      <Compile Include="Assets\Scripts\L2\Scum.js" />
@@ -59,6 +60,9 @@
      <Compile Include="Assets\Scripts\L2\TestOriginalScum.js" />
      <Compile Include="Assets\Scripts\L2\destroy.js" />
      <Compile Include="Assets\Scripts\L2\scriptDraggable.js" />
+ <Reference Include="Assets\uSequencer\Sequencer\uSequencerRuntime">
+ <HintPath>Assets\uSequencer\Sequencer\uSequencerRuntime.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

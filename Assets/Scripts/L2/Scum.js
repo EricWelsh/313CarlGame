@@ -134,12 +134,16 @@ function OnMouseUp () {
 function OnCollisionEnter (collider:Collision) {
 	if (collider.gameObject.tag == "Hands" && LevelTimer.seconds > 0) {
 	//	if the object with selected tag is hit, then does stuff
+//	PointsScored.points+=100;
+	PointsScored.points+=Arm.scumPointValue;
+	
 	Destroy(this.gameObject);
 	//	going need to use to destroy almost anything
 	
-	PointsScored.points+=100;
-	Arm.speed+=0.05;
 	
+	//Arm.speed+=0.05;
+	
+	Spawning.ScumAmount+= -1;
 	}
 	
 	if (collider.gameObject.tag == "Scum") {

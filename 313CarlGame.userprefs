@@ -1,6 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/L2/EndOfLevel.js">
+    <Files>
+      <File FileName="Assets/Scripts/L2/LevelTimer.js" Line="3" Column="22" />
+      <File FileName="Assets/Scripts/L2/Scum.js" Line="27" Column="28" />
+      <File FileName="Assets/Scripts/L2/Spawning.js" Line="18" Column="31" />
+      <File FileName="Assets/Scripts/L2/PointsScored.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/L2/Arm.js" Line="63" Column="63" />
+      <File FileName="Assets/Scripts/L2/EndOfLevel.js" Line="21" Column="139" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
